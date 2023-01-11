@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F0411EE8296F0ACB00973399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0411EE7296F0ACB00973399 /* AppDelegate.swift */; };
-		F0411EEA296F0ACB00973399 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0411EE9296F0ACB00973399 /* SceneDelegate.swift */; };
 		F0411EEC296F0ACB00973399 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0411EEB296F0ACB00973399 /* ViewController.swift */; };
-		F0411EEF296F0ACB00973399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0411EED296F0ACB00973399 /* Main.storyboard */; };
 		F0411EF1296F0ACD00973399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0411EF0296F0ACD00973399 /* Assets.xcassets */; };
 		F0411EF4296F0ACD00973399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0411EF2296F0ACD00973399 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		F0411EE4296F0ACB00973399 /* PodProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0411EE7296F0ACB00973399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F0411EE9296F0ACB00973399 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F0411EEB296F0ACB00973399 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F0411EEE296F0ACB00973399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0411EF0296F0ACD00973399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0411EF3296F0ACD00973399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0411EF5296F0ACD00973399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				F0411EE7296F0ACB00973399 /* AppDelegate.swift */,
-				F0411EE9296F0ACB00973399 /* SceneDelegate.swift */,
 				F0411EEB296F0ACB00973399 /* ViewController.swift */,
-				F0411EED296F0ACB00973399 /* Main.storyboard */,
 				F0411EF0296F0ACD00973399 /* Assets.xcassets */,
 				F0411EF2296F0ACD00973399 /* LaunchScreen.storyboard */,
 				F0411EF5296F0ACD00973399 /* Info.plist */,
@@ -127,7 +121,6 @@
 			files = (
 				F0411EF4296F0ACD00973399 /* LaunchScreen.storyboard in Resources */,
 				F0411EF1296F0ACD00973399 /* Assets.xcassets in Resources */,
-				F0411EEF296F0ACB00973399 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,21 +133,12 @@
 			files = (
 				F0411EEC296F0ACB00973399 /* ViewController.swift in Sources */,
 				F0411EE8296F0ACB00973399 /* AppDelegate.swift in Sources */,
-				F0411EEA296F0ACB00973399 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F0411EED296F0ACB00973399 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F0411EEE296F0ACB00973399 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F0411EF2296F0ACD00973399 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +275,6 @@
 				INFOPLIST_FILE = PodProd/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +301,6 @@
 				INFOPLIST_FILE = PodProd/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
