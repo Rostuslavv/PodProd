@@ -11,6 +11,7 @@
 		F0411EEC296F0ACB00973399 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0411EEB296F0ACB00973399 /* ViewController.swift */; };
 		F0411EF1296F0ACD00973399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0411EF0296F0ACD00973399 /* Assets.xcassets */; };
 		F0411EF4296F0ACD00973399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0411EF2296F0ACD00973399 /* LaunchScreen.storyboard */; };
+		F0411FB0296F993600973399 /* UISplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0411FAF296F993600973399 /* UISplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		F0411EF0296F0ACD00973399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0411EF3296F0ACD00973399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0411EF5296F0ACD00973399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0411FAF296F993600973399 /* UISplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,11 +35,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC37BB71007FD8A0F19F124E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F0411EDB296F0ACB00973399 = {
 			isa = PBXGroup;
 			children = (
 				F0411EE6296F0ACB00973399 /* PodProd */,
 				F0411EE5296F0ACB00973399 /* Products */,
+				DC37BB71007FD8A0F19F124E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +64,7 @@
 			children = (
 				F0411EE7296F0ACB00973399 /* AppDelegate.swift */,
 				F0411EEB296F0ACB00973399 /* ViewController.swift */,
+				F0411FAF296F993600973399 /* UISplitViewController.swift */,
 				F0411EF0296F0ACD00973399 /* Assets.xcassets */,
 				F0411EF2296F0ACD00973399 /* LaunchScreen.storyboard */,
 				F0411EF5296F0ACD00973399 /* Info.plist */,
@@ -131,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0411FB0296F993600973399 /* UISplitViewController.swift in Sources */,
 				F0411EEC296F0ACB00973399 /* ViewController.swift in Sources */,
 				F0411EE8296F0ACB00973399 /* AppDelegate.swift in Sources */,
 			);
