@@ -49,10 +49,10 @@ class ViewController: UIViewController {
     }
     
     @objc private func detailsButtonTapped() {
-        let splitViewController = UISplitViewController()
-        splitViewController.modalTransitionStyle = .crossDissolve
-        splitViewController.modalPresentationStyle = .fullScreen
-        present(splitViewController, animated: true)
+        //let musterViewController = MusterViewController()
+        //musterViewController.modalTransitionStyle = .crossDissolve
+        //musterViewController.modalPresentationStyle = .fullScreen
+        //present(musterViewController, animated: false)
     }
 }
 
