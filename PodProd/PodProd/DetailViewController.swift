@@ -10,15 +10,25 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var navigationTitle: String = "DetailViewController"
+//    var masterObject: MasterVCModel? {
+//        didSet {
+//            setMasterObject()
+//        }
+//    }
+//
+    
+    var navigationTitle = "DetailViewController"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = self.navigationTitle
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        
+        navigationItem.title = "DetailViewController"
         hightMusterViewControllerIfNeeddet()
     }
+    
+//    private func setMasterObject() {
+//        loadViewIfNeeded()
+//    }
     
     private func hightMusterViewControllerIfNeeddet() {
         if let splitViewController = self.splitViewController {
@@ -28,3 +38,9 @@ class DetailViewController: UIViewController {
         }
     }
 }
+
+//extension DetailViewController: MasterObjectSelectedDelegate {
+//    func masterObjectSelected(masterObject: MasterVCModel) {
+//        self.masterObject = masterObject
+//    }
+//}

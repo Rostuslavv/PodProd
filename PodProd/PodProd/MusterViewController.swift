@@ -8,9 +8,15 @@
 import Foundation
 import UIKit
 
+protocol MasterObjectSelectedDelegate: class {
+    func masterObjectSelected(masterObject: MasterVCModel)
+}
+
 class MusterViewController: UITableViewController {
     
     var masterVC = MasterVCModel.fetchMasterVC()
+    
+    weak var delegate: MasterObjectSelectedDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,11 +43,45 @@ class MusterViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        let controller = DetailViewController()
         
         let currentMasterVC = masterVC[indexPath.row]
-        controller.navigationTitle = currentMasterVC.podVCName
-        let navigetionController = UINavigationController(rootViewController: controller)
-        self.splitViewController?.showDetailViewController(navigetionController, sender: nil)
+        delegate?.masterObjectSelected(masterObject: currentMasterVC)
+        
+        switch currentMasterVC.podVCName {
+        case "Тестовий перший под-проект":
+            let controller = DetailViewController()
+            let navigetionController = UINavigationController(rootViewController: controller)
+            self.splitViewController?.showDetailViewController(navigetionController, sender: nil)
+            //present(DetailViewController(), animated: true)
+            
+        case "Тестовий другий под-проект":
+            let controller = TestMasterModelViewController()
+            let navigetionController = UINavigationController(rootViewController: controller)
+            self.splitViewController?.showDetailViewController(navigetionController, sender: nil)
+            //present(TestMasterModelViewController(), animated: true)
+            
+        case "Тестовий третій под-проект":
+            let controller = TestMasterModelViewControllerTwo()
+            let navigetionController = UINavigationController(rootViewController: controller)
+            self.splitViewController?.showDetailViewController(navigetionController, sender: nil)
+            //present(TestMasterModelViewControllerTwo(), animated: true)
+            
+        default:
+            print("error")
+        }
+//
+//        if currentMasterVC.podVCName == "Тестовий перший под-проект" {
+//            present(TestMasterModelViewController(), animated: true)
+//
+//            if currentMasterVC.podVCName == "Тестовий другий под-проект" {
+//                present(TestMasterModelViewController(), animated: true)
+//            } else if currentMasterVC.podVCName == "Тестовий третій под-проект" {
+//                present(TestMasterModelViewControllerTwo(), animated: true)
+//            }
+//        }
+        
+//        controller.navigationTitle = currentMasterVC.podVCName
+//        let navigetionController = UINavigationController(rootViewController: controller)
+//        self.splitViewController?.showDetailViewController(navigetionController, sender: nil)
     }
 }

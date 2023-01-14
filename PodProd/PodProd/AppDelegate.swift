@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let musterVC = MusterViewController()
         let musterViewController = UINavigationController(rootViewController: musterVC)
         
-        let detailVC = ViewController()
+        let detailVC = DetailViewController()
         let detailViewController = UINavigationController(rootViewController: detailVC)
         
         let splitViewController = UISplitViewController()
@@ -29,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         splitViewController.preferredPrimaryColumnWidthFraction = 0.25
         //splitViewController.maximumPrimaryColumnWidth = 600
+        
+        //musterViewController.delegate = detailViewController as? any UINavigationControllerDelegate
         
         self.window?.rootViewController = splitViewController
         self.window!.makeKeyAndVisible()
