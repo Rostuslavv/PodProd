@@ -70,18 +70,42 @@
 		F0411EE6296F0ACB00973399 /* PodProd */ = {
 			isa = PBXGroup;
 			children = (
-				F0411EE7296F0ACB00973399 /* AppDelegate.swift */,
+				F0D2A0F129724B00004D2655 /* Aplication */,
+				F0D2A0F229724B22004D2655 /* UISplit */,
+				F0D2A0F329724B96004D2655 /* Resources */,
+				F0D2A0ED2972376F004D2655 /* TestMasterModelViewController.swift */,
 				F0411EEB296F0ACB00973399 /* ViewController.swift */,
+				F0D2A0EF297237B3004D2655 /* TestMasterModelViewControllerTwo.swift */,
+			);
+			path = PodProd;
+			sourceTree = "<group>";
+		};
+		F0D2A0F129724B00004D2655 /* Aplication */ = {
+			isa = PBXGroup;
+			children = (
+				F0411EE7296F0ACB00973399 /* AppDelegate.swift */,
+			);
+			path = Aplication;
+			sourceTree = "<group>";
+		};
+		F0D2A0F229724B22004D2655 /* UISplit */ = {
+			isa = PBXGroup;
+			children = (
 				F0411FAF296F993600973399 /* MusterViewController.swift */,
 				F0411FFE2970692B00973399 /* DetailViewController.swift */,
 				F0D2A0EB297223F7004D2655 /* MainModel.swift */,
-				F0D2A0ED2972376F004D2655 /* TestMasterModelViewController.swift */,
-				F0D2A0EF297237B3004D2655 /* TestMasterModelViewControllerTwo.swift */,
+			);
+			path = UISplit;
+			sourceTree = "<group>";
+		};
+		F0D2A0F329724B96004D2655 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				F0411EF0296F0ACD00973399 /* Assets.xcassets */,
 				F0411EF2296F0ACD00973399 /* LaunchScreen.storyboard */,
 				F0411EF5296F0ACD00973399 /* Info.plist */,
 			);
-			path = PodProd;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PodProd/Info.plist;
+				INFOPLIST_FILE = PodProd/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -327,7 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PodProd/Info.plist;
+				INFOPLIST_FILE = PodProd/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

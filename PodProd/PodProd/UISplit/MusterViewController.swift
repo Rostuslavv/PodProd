@@ -36,17 +36,18 @@ class MusterViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
         let currentMasterVC = masterVC[indexPath.row]
         cell.textLabel?.text = currentMasterVC.podVCName
+        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        
+        //let controller = DetailViewController()
         let currentMasterVC = masterVC[indexPath.row]
-        delegate?.masterObjectSelected(masterObject: currentMasterVC)
-        
+        //controller.navigationTitle = "\(currentMasterVC)"
+        //delegate?.masterObjectSelected(masterObject: currentMasterVC)
+
         switch currentMasterVC.podVCName {
         case "Тестовий перший под-проект":
             let controller = DetailViewController()

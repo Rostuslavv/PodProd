@@ -34,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController = splitViewController
         self.window!.makeKeyAndVisible()
+        
         return true
     }
 }

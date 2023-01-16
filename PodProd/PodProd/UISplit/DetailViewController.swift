@@ -21,8 +21,8 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .brown
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.title = "DetailViewController"
         hightMusterViewControllerIfNeeddet()
     }
     
