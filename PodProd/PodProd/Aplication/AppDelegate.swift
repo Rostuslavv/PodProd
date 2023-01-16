@@ -29,9 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         splitViewController.preferredPrimaryColumnWidthFraction = 0.25
         //splitViewController.maximumPrimaryColumnWidth = 600
-        
-        //musterViewController.delegate = detailViewController as? any UINavigationControllerDelegate
-        
+                
         self.window?.rootViewController = splitViewController
         self.window!.makeKeyAndVisible()
         

@@ -9,14 +9,7 @@ import Foundation
 import UIKit
 
 class DetailViewController: UIViewController {
-    
-//    var masterObject: MasterVCModel? {
-//        didSet {
-//            setMasterObject()
-//        }
-//    }
-//
-    
+
     var navigationTitle = "DetailViewController"
     
     override func viewDidLoad() {
@@ -25,11 +18,7 @@ class DetailViewController: UIViewController {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         hightMusterViewControllerIfNeeddet()
     }
-    
-//    private func setMasterObject() {
-//        loadViewIfNeeded()
-//    }
-    
+
     private func hightMusterViewControllerIfNeeddet() {
         if let splitViewController = self.splitViewController {
             if let navControler = splitViewController.viewControllers.last as? UINavigationController {
@@ -38,9 +27,3 @@ class DetailViewController: UIViewController {
         }
     }
 }
-
-//extension DetailViewController: MasterObjectSelectedDelegate {
-//    func masterObjectSelected(masterObject: MasterVCModel) {
-//        self.masterObject = masterObject
-//    }
-//}
