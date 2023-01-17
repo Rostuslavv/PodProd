@@ -14,8 +14,11 @@
 		F0411FB0296F993600973399 /* MusterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0411FAF296F993600973399 /* MusterViewController.swift */; };
 		F0411FFF2970692B00973399 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0411FFE2970692B00973399 /* DetailViewController.swift */; };
 		F0D2A0EC297223F7004D2655 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A0EB297223F7004D2655 /* MainModel.swift */; };
-		F0D2A0EE2972376F004D2655 /* TestMasterModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A0ED2972376F004D2655 /* TestMasterModelViewController.swift */; };
+		F0D2A0EE2972376F004D2655 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A0ED2972376F004D2655 /* MainTabBarController.swift */; };
 		F0D2A0F0297237B3004D2655 /* TestMasterModelViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A0EF297237B3004D2655 /* TestMasterModelViewControllerTwo.swift */; };
+		F0D2A1A02976E120004D2655 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A19F2976E120004D2655 /* ScheduleViewController.swift */; };
+		F0D2A1A22976E133004D2655 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A1A12976E133004D2655 /* TasksViewController.swift */; };
+		F0D2A1A42976E14D004D2655 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A1A32976E14D004D2655 /* ContactsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +31,11 @@
 		F0411FAF296F993600973399 /* MusterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusterViewController.swift; sourceTree = "<group>"; };
 		F0411FFE2970692B00973399 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F0D2A0EB297223F7004D2655 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
-		F0D2A0ED2972376F004D2655 /* TestMasterModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMasterModelViewController.swift; sourceTree = "<group>"; };
+		F0D2A0ED2972376F004D2655 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		F0D2A0EF297237B3004D2655 /* TestMasterModelViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMasterModelViewControllerTwo.swift; sourceTree = "<group>"; };
+		F0D2A19F2976E120004D2655 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		F0D2A1A12976E133004D2655 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		F0D2A1A32976E14D004D2655 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +78,8 @@
 			children = (
 				F0D2A0F129724B00004D2655 /* Aplication */,
 				F0D2A0F229724B22004D2655 /* UISplit */,
+				F0D2A19E2976E0BB004D2655 /* MySchedule */,
 				F0D2A0F329724B96004D2655 /* Resources */,
-				F0D2A0ED2972376F004D2655 /* TestMasterModelViewController.swift */,
 				F0411EEB296F0ACB00973399 /* ViewController.swift */,
 				F0D2A0EF297237B3004D2655 /* TestMasterModelViewControllerTwo.swift */,
 			);
@@ -106,6 +112,17 @@
 				F0411EF5296F0ACD00973399 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F0D2A19E2976E0BB004D2655 /* MySchedule */ = {
+			isa = PBXGroup;
+			children = (
+				F0D2A0ED2972376F004D2655 /* MainTabBarController.swift */,
+				F0D2A19F2976E120004D2655 /* ScheduleViewController.swift */,
+				F0D2A1A12976E133004D2655 /* TasksViewController.swift */,
+				F0D2A1A32976E14D004D2655 /* ContactsViewController.swift */,
+			);
+			path = MySchedule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,12 +196,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0D2A0F0297237B3004D2655 /* TestMasterModelViewControllerTwo.swift in Sources */,
-				F0D2A0EE2972376F004D2655 /* TestMasterModelViewController.swift in Sources */,
+				F0D2A0EE2972376F004D2655 /* MainTabBarController.swift in Sources */,
 				F0411FB0296F993600973399 /* MusterViewController.swift in Sources */,
+				F0D2A1A02976E120004D2655 /* ScheduleViewController.swift in Sources */,
 				F0411EEC296F0ACB00973399 /* ViewController.swift in Sources */,
 				F0411EE8296F0ACB00973399 /* AppDelegate.swift in Sources */,
 				F0D2A0EC297223F7004D2655 /* MainModel.swift in Sources */,
 				F0411FFF2970692B00973399 /* DetailViewController.swift in Sources */,
+				F0D2A1A22976E133004D2655 /* TasksViewController.swift in Sources */,
+				F0D2A1A42976E14D004D2655 /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,10 +8,6 @@
 import Foundation
 import UIKit
 
-protocol MasterObjectSelectedDelegate: class {
-    func masterObjectSelected(masterObject: MasterVCModel)
-}
-
 class MusterViewController: UITableViewController {
     
     var masterVC = MasterVCModel.fetchMasterVC()
@@ -65,4 +61,5 @@ class MusterViewController: UITableViewController {
         let navigetionController = UINavigationController(rootViewController: viewController)
         splitViewController?.showDetailViewController(navigetionController, sender: nil)
     }
+    
 }

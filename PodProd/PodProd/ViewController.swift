@@ -24,6 +24,7 @@ class ViewController: UIViewController {
 
         view.backgroundColor = .yellow
         setupView()
+        hightMusterViewControllerIfNeeddet()
     }
     
     private func setupView() {
@@ -53,6 +54,14 @@ class ViewController: UIViewController {
         //musterViewController.modalTransitionStyle = .crossDissolve
         //musterViewController.modalPresentationStyle = .fullScreen
         //present(musterViewController, animated: false)
+    }
+    
+    private func hightMusterViewControllerIfNeeddet() {
+        if let splitViewController = self.splitViewController {
+            if let navControler = splitViewController.viewControllers.last as? UINavigationController {
+                navControler.topViewController?.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
+            }
+        }
     }
 }
 

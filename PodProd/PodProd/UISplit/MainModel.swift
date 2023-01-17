@@ -14,7 +14,7 @@ struct MasterVCModel {
     
     static func fetchMasterVC() -> [MasterVCModel] {
         let test1 = MasterVCModel(podVCName: "Тестовий перший под-проект", detailVC: ViewController())
-        let test2 = MasterVCModel(podVCName: "Тестовий другий под-проект", detailVC: TestMasterModelViewController())
+        let test2 = MasterVCModel(podVCName: "Тестовий другий под-проект", detailVC: MainTabBarController())
         let test3 = MasterVCModel(podVCName: "Тестовий третій под-проект", detailVC: TestMasterModelViewControllerTwo())
         
         return [test1, test2, test3]
