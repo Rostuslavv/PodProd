@@ -14,10 +14,10 @@ struct MasterVCModel {
     var detailVC: UIViewController
         
     static func fetchMasterVC() -> [MasterVCModel] {
-        let test1 = MasterVCModel(podVCName: "Тестовий перший под-проект", detailVC: ViewController())
-        let test2 = MasterVCModel(podVCName: "Тестовий другий под-проект", detailVC: MainTabBarController())
-        let test3 = MasterVCModel(podVCName: "Тестовий третій под-проект", detailVC: UIHostingController(rootView: Home()))
+        let viewController = MasterVCModel(podVCName: "ViewController", detailVC: ViewController())
+        let mySchedule = MasterVCModel(podVCName: "MySchedule", detailVC: MainTabBarController())
+        let backrounfFetchingSwiftUI = MasterVCModel(podVCName: "BackrounfFetchingSwiftUI", detailVC: UIHostingController(rootView: Home()))
         
-        return [test1, test2, test3]
+        return [viewController, mySchedule, backrounfFetchingSwiftUI]
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 struct Home: View {
     
@@ -27,7 +28,7 @@ struct Home: View {
                             
                             // Each Time Wiil Be Multiples Of 5...
                             
-                            let time = index * 10
+                            let time = index * 5
                             
                             Text("\(time)")
                                 .font(.system(size: 45, weight: .heavy))
@@ -49,6 +50,7 @@ struct Home: View {
                 
                 // Setting To center...
                 .offset(y: 40)
+                .opacity(data.buttonAnimation ? 0 : 1)
                 
                 Spacer()
                 
@@ -64,6 +66,7 @@ struct Home: View {
                     withAnimation(Animation.easeIn.delay(0.6)) {
                         data.timerViewOffset = 0
                     }
+                    performNotifications()
                 }, label: {
                     
                     Circle()
@@ -79,17 +82,69 @@ struct Home: View {
             }
             
             Color.pink
-                .ignoresSafeArea(.all, edges: .all)
+                // Decreasing height for each count...
                 .overlay(
                     Text("\(data.selectedTime)")
                         .font(.system(size: 55, weight: .heavy))
                         .foregroundColor(.white)
                 )
+                .frame(height: UIScreen.main.bounds.height - data.timerHeightChange)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+                .ignoresSafeArea(.all, edges: .all)
                 .offset(y: data.timerViewOffset)
             
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.brown.ignoresSafeArea(.all, edges: .all))
+        // Timer functionality...
+        .onReceive(Timer.publish(every: 1, on: .main, in: .common).autoconnect(), perform: { _ in
+            // Conditions...
+            if data.time != 0 && data.selectedTime != 0 && data.buttonAnimation {
+                // Counting timer...
+                data.selectedTime -= 1
+                
+                // Update height...
+                let progressHeight = UIScreen.main.bounds.height / CGFloat(data.time)
+                let diff = data.time - data.selectedTime
+                
+                withAnimation(.default) {
+                    data.timerHeightChange = CGFloat(diff) * progressHeight
+                }
+                
+                if data.selectedTime == 0 {
+                    // Resentting...
+                    withAnimation(.default) {
+                        data.resetView()
+                    }
+                }
+            }
+        })
+        .onAppear(perform: {
+            
+            // Permissions...
+            UNUserNotificationCenter.current().requestAuthorization(options: [.badge, .sound, .alert]) { (_, _) in
+            }
+            
+            // Setting delegate for in - App notification...
+            UNUserNotificationCenter.current().delegate = data
+            
+        })
+    }
+    
+    func performNotifications() {
+        let content = UNMutableNotificationContent()
+        content.title = "Notofication From Soft"
+        content.body = "Timer has been finished!!!"
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(data.time), repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "TIMER", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request) { (error) in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+        }
     }
 }
 

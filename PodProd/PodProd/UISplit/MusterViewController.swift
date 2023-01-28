@@ -45,11 +45,11 @@ class MusterViewController: UITableViewController {
         controller.navigationTitle = "\(currentMasterVC)"
         
         switch currentMasterVC.podVCName {
-        case "Тестовий перший под-проект":
+        case currentMasterVC.podVCName:
             setUpPresentViewController(viewController: currentMasterVC.detailVC)
-        case "Тестовий другий под-проект":
+        case currentMasterVC.podVCName:
             setUpPresentViewController(viewController: currentMasterVC.detailVC)
-        case "Тестовий третій под-проект":
+        case currentMasterVC.podVCName:
             setUpPresentViewController(viewController: currentMasterVC.detailVC)
         default:
             print("error")
