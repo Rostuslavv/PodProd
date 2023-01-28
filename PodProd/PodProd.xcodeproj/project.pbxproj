@@ -13,6 +13,8 @@
 		F0411EF4296F0ACD00973399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0411EF2296F0ACD00973399 /* LaunchScreen.storyboard */; };
 		F0411FB0296F993600973399 /* MusterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0411FAF296F993600973399 /* MusterViewController.swift */; };
 		F0411FFF2970692B00973399 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0411FFE2970692B00973399 /* DetailViewController.swift */; };
+		F089EC5429840D5A00312FD6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F089EC5329840D5A00312FD6 /* Home.swift */; };
+		F089EC5829841C8E00312FD6 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F089EC5729841C8E00312FD6 /* TimerViewModel.swift */; };
 		F0D2A0EC297223F7004D2655 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A0EB297223F7004D2655 /* MainModel.swift */; };
 		F0D2A0EE2972376F004D2655 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A0ED2972376F004D2655 /* MainTabBarController.swift */; };
 		F0D2A0F0297237B3004D2655 /* TestMasterModelViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A0EF297237B3004D2655 /* TestMasterModelViewControllerTwo.swift */; };
@@ -30,6 +32,8 @@
 		F0411EF5296F0ACD00973399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0411FAF296F993600973399 /* MusterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusterViewController.swift; sourceTree = "<group>"; };
 		F0411FFE2970692B00973399 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F089EC5329840D5A00312FD6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		F089EC5729841C8E00312FD6 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		F0D2A0EB297223F7004D2655 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		F0D2A0ED2972376F004D2655 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		F0D2A0EF297237B3004D2655 /* TestMasterModelViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMasterModelViewControllerTwo.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 		F0411EE6296F0ACB00973399 /* PodProd */ = {
 			isa = PBXGroup;
 			children = (
+				F089EC5029840B0E00312FD6 /* BacklrounfFetchingSwiftUI */,
 				F0D2A0F129724B00004D2655 /* Aplication */,
 				F0D2A0F229724B22004D2655 /* UISplit */,
 				F0D2A19E2976E0BB004D2655 /* MySchedule */,
@@ -84,6 +89,31 @@
 				F0D2A0EF297237B3004D2655 /* TestMasterModelViewControllerTwo.swift */,
 			);
 			path = PodProd;
+			sourceTree = "<group>";
+		};
+		F089EC5029840B0E00312FD6 /* BacklrounfFetchingSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				F089EC5629841C5200312FD6 /* ViewModel */,
+				F089EC5529841C3F00312FD6 /* View */,
+			);
+			path = BacklrounfFetchingSwiftUI;
+			sourceTree = "<group>";
+		};
+		F089EC5529841C3F00312FD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F089EC5329840D5A00312FD6 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F089EC5629841C5200312FD6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F089EC5729841C8E00312FD6 /* TimerViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F0D2A0F129724B00004D2655 /* Aplication */ = {
@@ -198,6 +228,8 @@
 				F0D2A0F0297237B3004D2655 /* TestMasterModelViewControllerTwo.swift in Sources */,
 				F0D2A0EE2972376F004D2655 /* MainTabBarController.swift in Sources */,
 				F0411FB0296F993600973399 /* MusterViewController.swift in Sources */,
+				F089EC5429840D5A00312FD6 /* Home.swift in Sources */,
+				F089EC5829841C8E00312FD6 /* TimerViewModel.swift in Sources */,
 				F0D2A1A02976E120004D2655 /* ScheduleViewController.swift in Sources */,
 				F0411EEC296F0ACB00973399 /* ViewController.swift in Sources */,
 				F0411EE8296F0ACB00973399 /* AppDelegate.swift in Sources */,

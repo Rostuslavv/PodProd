@@ -7,15 +7,16 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 struct MasterVCModel {
     var podVCName: String?
     var detailVC: UIViewController
-    
+        
     static func fetchMasterVC() -> [MasterVCModel] {
         let test1 = MasterVCModel(podVCName: "Тестовий перший под-проект", detailVC: ViewController())
         let test2 = MasterVCModel(podVCName: "Тестовий другий под-проект", detailVC: MainTabBarController())
-        let test3 = MasterVCModel(podVCName: "Тестовий третій под-проект", detailVC: TestMasterModelViewControllerTwo())
+        let test3 = MasterVCModel(podVCName: "Тестовий третій под-проект", detailVC: UIHostingController(rootView: Home()))
         
         return [test1, test2, test3]
     }
