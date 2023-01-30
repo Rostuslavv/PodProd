@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F020D3C22988335200EB5ED2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F020D3C12988335200EB5ED2 /* CoreLocation.framework */; };
 		F0411EE8296F0ACB00973399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0411EE7296F0ACB00973399 /* AppDelegate.swift */; };
-		F0411EEC296F0ACB00973399 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0411EEB296F0ACB00973399 /* ViewController.swift */; };
+		F0411EEC296F0ACB00973399 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0411EEB296F0ACB00973399 /* WeatherViewController.swift */; };
 		F0411EF1296F0ACD00973399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0411EF0296F0ACD00973399 /* Assets.xcassets */; };
 		F0411EF4296F0ACD00973399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0411EF2296F0ACD00973399 /* LaunchScreen.storyboard */; };
 		F0411FB0296F993600973399 /* MusterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0411FAF296F993600973399 /* MusterViewController.swift */; };
@@ -24,9 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F020D3C12988335200EB5ED2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F0411EE4296F0ACB00973399 /* PodProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0411EE7296F0ACB00973399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F0411EEB296F0ACB00973399 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0411EEB296F0ACB00973399 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		F0411EF0296F0ACD00973399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0411EF3296F0ACD00973399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0411EF5296F0ACD00973399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,17 +49,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F020D3C22988335200EB5ED2 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		863B3DBCE9D58A0A44427B92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F020D3C12988335200EB5ED2 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DC37BB71007FD8A0F19F124E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F020D3C02988330700EB5ED2 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				F0411EEB296F0ACB00973399 /* WeatherViewController.swift */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 		F0411EDB296F0ACB00973399 = {
@@ -66,6 +85,7 @@
 				F0411EE6296F0ACB00973399 /* PodProd */,
 				F0411EE5296F0ACB00973399 /* Products */,
 				DC37BB71007FD8A0F19F124E /* Pods */,
+				863B3DBCE9D58A0A44427B92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,12 +100,12 @@
 		F0411EE6296F0ACB00973399 /* PodProd */ = {
 			isa = PBXGroup;
 			children = (
+				F020D3C02988330700EB5ED2 /* Weather */,
 				F089EC5029840B0E00312FD6 /* BacklrounfFetchingSwiftUI */,
 				F0D2A0F129724B00004D2655 /* Aplication */,
 				F0D2A0F229724B22004D2655 /* UISplit */,
 				F0D2A19E2976E0BB004D2655 /* MySchedule */,
 				F0D2A0F329724B96004D2655 /* Resources */,
-				F0411EEB296F0ACB00973399 /* ViewController.swift */,
 				F0D2A0EF297237B3004D2655 /* TestMasterModelViewControllerTwo.swift */,
 			);
 			path = PodProd;
@@ -231,7 +251,7 @@
 				F089EC5429840D5A00312FD6 /* Home.swift in Sources */,
 				F089EC5829841C8E00312FD6 /* TimerViewModel.swift in Sources */,
 				F0D2A1A02976E120004D2655 /* ScheduleViewController.swift in Sources */,
-				F0411EEC296F0ACB00973399 /* ViewController.swift in Sources */,
+				F0411EEC296F0ACB00973399 /* WeatherViewController.swift in Sources */,
 				F0411EE8296F0ACB00973399 /* AppDelegate.swift in Sources */,
 				F0D2A0EC297223F7004D2655 /* MainModel.swift in Sources */,
 				F0411FFF2970692B00973399 /* DetailViewController.swift in Sources */,
@@ -377,6 +397,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PodProd/Resources/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "I need your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -404,6 +425,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PodProd/Resources/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "I need your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
