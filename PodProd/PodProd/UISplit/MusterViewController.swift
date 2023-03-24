@@ -47,10 +47,6 @@ class MusterViewController: UITableViewController {
         switch currentMasterVC.podVCName {
         case currentMasterVC.podVCName:
             setUpPresentViewController(viewController: currentMasterVC.detailVC)
-        case currentMasterVC.podVCName:
-            setUpPresentViewController(viewController: currentMasterVC.detailVC)
-        case currentMasterVC.podVCName:
-            setUpPresentViewController(viewController: currentMasterVC.detailVC)
         default:
             print("error")
         }
