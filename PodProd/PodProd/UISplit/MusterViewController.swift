@@ -10,7 +10,7 @@ import UIKit
 
 class MusterViewController: UITableViewController {
     
-    var masterVC = MasterVCModel.fetchMasterVC()
+    private let masterVC = MasterVCModel.fetchMasterVC()
         
     override func viewDidLoad() {
         super.viewDidLoad()

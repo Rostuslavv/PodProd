@@ -16,9 +16,14 @@ enum Tabs: Int {
 
 final class WorkoutTabBarController: UITabBarController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
         configure()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     private func configure() {
@@ -30,10 +35,10 @@ final class WorkoutTabBarController: UITabBarController {
         tabBar.layer.borderWidth = 1
         tabBar.layer.masksToBounds = true
         
-        let overviewController = OverViewController()
-        let sessionViewController = UIViewController()
-        let progressController = UIViewController()
-        let settingsController = UIViewController()
+        let overviewController = OverviewController()
+        let sessionViewController = SessionController()
+        let progressController = ProgressController()
+        let settingsController = SettingController()
         
         let overviewNavigation = NavBarController(rootViewController: overviewController)
         let sessionNavigation = NavBarController(rootViewController: sessionViewController)
@@ -41,16 +46,16 @@ final class WorkoutTabBarController: UITabBarController {
         let settingsNavigation = NavBarController(rootViewController: settingsController)
 
         overviewNavigation.tabBarItem = UITabBarItem(title: "Overview",
-                                                     image: UIImage(systemName: Resources.Strings.TabBar.overview),
+                                                     image: UIImage(systemName: Resources.Images.TabBarImage.overviewImage),
                                                      tag: Tabs.overview.rawValue)
-        sessionNavigation.tabBarItem = UITabBarItem(title: "Sesion",
-                                                    image: UIImage(systemName: Resources.Strings.TabBar.sesion),
+        sessionNavigation.tabBarItem = UITabBarItem(title: "Session",
+                                                    image: UIImage(systemName: Resources.Images.TabBarImage.sessionImage),
                                                      tag: Tabs.session.rawValue)
         progressNavigation.tabBarItem = UITabBarItem(title: "Progress",
-                                                     image: UIImage(systemName: Resources.Strings.TabBar.progress),
+                                                     image: UIImage(systemName: Resources.Images.TabBarImage.progressImage),
                                                      tag: Tabs.progress.rawValue)
         settingsNavigation.tabBarItem = UITabBarItem(title: "Settings",
-                                                     image: UIImage(systemName: Resources.Strings.TabBar.settings),
+                                                     image: UIImage(systemName: Resources.Images.TabBarImage.settingsImage),
                                                      tag: Tabs.settings.rawValue)
         setViewControllers([overviewNavigation,
                             sessionNavigation,

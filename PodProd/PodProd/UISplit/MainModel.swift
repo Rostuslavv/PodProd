@@ -19,6 +19,10 @@ struct MasterVCModel {
         let backrounfFetchingSwiftUI = MasterVCModel(podVCName: "BackrounfFetchingSwiftUI", detailVC: UIHostingController(rootView: Home()))
         let workoutTabBarController = MasterVCModel(podVCName: "WorkoutTabBarController", detailVC: WorkoutTabBarController())
         
-        return [weatherViewController, mySchedule, backrounfFetchingSwiftUI, workoutTabBarController]
+        return [weatherViewController,
+                mySchedule,
+                backrounfFetchingSwiftUI,
+                workoutTabBarController
+        ]
     }
 }
