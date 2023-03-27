@@ -13,12 +13,7 @@ final class OverviewNavBar: BaseView {
     private let allWorkoutsButton = SecondaryButton()
     private let addButton = UIButton()
     
-    private var weekView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .blue.withAlphaComponent(0.2)
-        
-        return view
-    }()
+    private var weekView: UIView = WeekView()
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -75,8 +70,8 @@ extension OverviewNavBar {
         ])
     }
     
-    override func configure() {
-        super.configure()
+    override func configureView() {
+        super.configureView()
         
         backgroundColor = .white
         

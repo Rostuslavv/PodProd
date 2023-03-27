@@ -29,12 +29,15 @@
 		F08F056F29CE4EB0009628CA /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F056E29CE4EB0009628CA /* SecondaryButton.swift */; };
 		F08F057129CE66E7009628CA /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F057029CE66E7009628CA /* OverviewNavBar.swift */; };
 		F08F057329CE6719009628CA /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F057229CE6719009628CA /* BaseView.swift */; };
+		F08F057629CF3658009628CA /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F057529CF3658009628CA /* WeekView.swift */; };
+		F08F057829CF385E009628CA /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F057729CF385E009628CA /* WeekDayView.swift */; };
 		F0D2A0EC297223F7004D2655 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A0EB297223F7004D2655 /* MainModel.swift */; };
 		F0D2A0EE2972376F004D2655 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A0ED2972376F004D2655 /* MainTabBarController.swift */; };
 		F0D2A0F0297237B3004D2655 /* TestMasterModelViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A0EF297237B3004D2655 /* TestMasterModelViewControllerTwo.swift */; };
 		F0D2A1A02976E120004D2655 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A19F2976E120004D2655 /* ScheduleViewController.swift */; };
 		F0D2A1A22976E133004D2655 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A1A12976E133004D2655 /* TasksViewController.swift */; };
 		F0D2A1A42976E14D004D2655 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A1A32976E14D004D2655 /* ContactsViewController.swift */; };
+		F0F42D0629D1C54500EF49B6 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F42D0529D1C54500EF49B6 /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,12 +65,15 @@
 		F08F056E29CE4EB0009628CA /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		F08F057029CE66E7009628CA /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		F08F057229CE6719009628CA /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		F08F057529CF3658009628CA /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		F08F057729CF385E009628CA /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
 		F0D2A0EB297223F7004D2655 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		F0D2A0ED2972376F004D2655 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		F0D2A0EF297237B3004D2655 /* TestMasterModelViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMasterModelViewControllerTwo.swift; sourceTree = "<group>"; };
 		F0D2A19F2976E120004D2655 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		F0D2A1A12976E133004D2655 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		F0D2A1A32976E14D004D2655 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		F0F42D0529D1C54500EF49B6 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +192,7 @@
 			children = (
 				F08F052F29CDF240009628CA /* UIColor+Extensions.swift */,
 				F08F056029CE393D009628CA /* UIView+Extensions.swift */,
+				F0F42D0529D1C54500EF49B6 /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -249,10 +256,20 @@
 		F08F056D29CE4E94009628CA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F08F057429CF363E009628CA /* WeekView */,
 				F08F056E29CE4EB0009628CA /* SecondaryButton.swift */,
 				F08F057029CE66E7009628CA /* OverviewNavBar.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F08F057429CF363E009628CA /* WeekView */ = {
+			isa = PBXGroup;
+			children = (
+				F08F057529CF3658009628CA /* WeekView.swift */,
+				F08F057729CF385E009628CA /* WeekDayView.swift */,
+			);
+			path = WeekView;
 			sourceTree = "<group>";
 		};
 		F0D2A0F129724B00004D2655 /* Aplication */ = {
@@ -368,6 +385,7 @@
 				F0D2A0F0297237B3004D2655 /* TestMasterModelViewControllerTwo.swift in Sources */,
 				F0D2A0EE2972376F004D2655 /* MainTabBarController.swift in Sources */,
 				F0411FB0296F993600973399 /* MusterViewController.swift in Sources */,
+				F08F057829CF385E009628CA /* WeekDayView.swift in Sources */,
 				F08F056F29CE4EB0009628CA /* SecondaryButton.swift in Sources */,
 				F089EC5429840D5A00312FD6 /* Home.swift in Sources */,
 				F089EC5829841C8E00312FD6 /* TimerViewModel.swift in Sources */,
@@ -380,6 +398,7 @@
 				F08F053729CE3533009628CA /* BaseController.swift in Sources */,
 				F0411EEC296F0ACB00973399 /* WeatherViewController.swift in Sources */,
 				F0411EE8296F0ACB00973399 /* AppDelegate.swift in Sources */,
+				F08F057629CF3658009628CA /* WeekView.swift in Sources */,
 				F0D2A0EC297223F7004D2655 /* MainModel.swift in Sources */,
 				F08F056129CE393D009628CA /* UIView+Extensions.swift in Sources */,
 				F08F053229CDF2A9009628CA /* Resouces.swift in Sources */,
@@ -387,6 +406,7 @@
 				F0411FFF2970692B00973399 /* DetailViewController.swift in Sources */,
 				F08F053029CDF240009628CA /* UIColor+Extensions.swift in Sources */,
 				F0D2A1A22976E133004D2655 /* TasksViewController.swift in Sources */,
+				F0F42D0629D1C54500EF49B6 /* Date+Extension.swift in Sources */,
 				F0D2A1A42976E14D004D2655 /* ContactsViewController.swift in Sources */,
 				F08F053429CE26EB009628CA /* NavBarController.swift in Sources */,
 			);

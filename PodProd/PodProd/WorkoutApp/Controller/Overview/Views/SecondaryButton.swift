@@ -16,7 +16,7 @@ final class SecondaryButton: UIButton {
         super.init(frame: frame)
         
         addViews()
-        layoutViews()
+        loyoutViews()
         configure()
     }
     
@@ -34,7 +34,7 @@ private extension SecondaryButton {
         addView(label)
         addView(iconView)
     }
-    func layoutViews() {
+    func loyoutViews() {
         NSLayoutConstraint.activate([
             iconView.centerYAnchor.constraint(equalTo: centerYAnchor),
             iconView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
