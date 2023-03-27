@@ -7,13 +7,13 @@
 
 import UIKit
 
-class SettingController: UIViewController {
+class SettingController: BaseController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = Resources.Strings.NavBarName.settings
-        navigationController?.tabBarItem.title = Resources.Strings.TabBarName.settings
+        title = R.Strings.NavBarName.settings
+        navigationController?.tabBarItem.title = R.Strings.TabBar.title(for: .settings)
     }
     
 }
