@@ -15,9 +15,7 @@ class OverviewController: BaseController {
         super.viewDidLoad()
 
         title = R.Strings.NavBarName.overview
-
         hightMusterViewControllerIfNeeddet()
-       //navigationController?.tabBarItem.title = Resources.Strings.TabBarName.overview
     }
     
     private func hightMusterViewControllerIfNeeddet() {
