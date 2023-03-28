@@ -38,6 +38,7 @@
 		F0D2A1A22976E133004D2655 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A1A12976E133004D2655 /* TasksViewController.swift */; };
 		F0D2A1A42976E14D004D2655 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A1A32976E14D004D2655 /* ContactsViewController.swift */; };
 		F0F42D0629D1C54500EF49B6 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F42D0529D1C54500EF49B6 /* Date+Extension.swift */; };
+		F0F42D8529D31B1800EF49B6 /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F42D8429D31B1800EF49B6 /* BaseInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		F0D2A1A12976E133004D2655 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		F0D2A1A32976E14D004D2655 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		F0F42D0529D1C54500EF49B6 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		F0F42D8429D31B1800EF49B6 /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +268,7 @@
 		F08F057429CF363E009628CA /* WeekView */ = {
 			isa = PBXGroup;
 			children = (
+				F0F42D8329D31AF800EF49B6 /* Views */,
 				F08F057529CF3658009628CA /* WeekView.swift */,
 				F08F057729CF385E009628CA /* WeekDayView.swift */,
 			);
@@ -309,6 +312,14 @@
 				F0D2A1A32976E14D004D2655 /* ContactsViewController.swift */,
 			);
 			path = MySchedule;
+			sourceTree = "<group>";
+		};
+		F0F42D8329D31AF800EF49B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F0F42D8429D31B1800EF49B6 /* BaseInfoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,6 +407,7 @@
 				F08F051929CDC881009628CA /* WorkoutTabBarController.swift in Sources */,
 				F08F057329CE6719009628CA /* BaseView.swift in Sources */,
 				F08F053729CE3533009628CA /* BaseController.swift in Sources */,
+				F0F42D8529D31B1800EF49B6 /* BaseInfoView.swift in Sources */,
 				F0411EEC296F0ACB00973399 /* WeatherViewController.swift in Sources */,
 				F0411EE8296F0ACB00973399 /* AppDelegate.swift in Sources */,
 				F08F057629CF3658009628CA /* WeekView.swift in Sources */,
