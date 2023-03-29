@@ -26,7 +26,7 @@
 		F08F056829CE3C66009628CA /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F056729CE3C66009628CA /* SessionController.swift */; };
 		F08F056A29CE3C83009628CA /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F056929CE3C83009628CA /* ProgressController.swift */; };
 		F08F056C29CE3C97009628CA /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F056B29CE3C97009628CA /* SettingController.swift */; };
-		F08F056F29CE4EB0009628CA /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F056E29CE4EB0009628CA /* SecondaryButton.swift */; };
+		F08F056F29CE4EB0009628CA /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F056E29CE4EB0009628CA /* WAButton.swift */; };
 		F08F057129CE66E7009628CA /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F057029CE66E7009628CA /* OverviewNavBar.swift */; };
 		F08F057329CE6719009628CA /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F057229CE6719009628CA /* BaseView.swift */; };
 		F08F057629CF3658009628CA /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08F057529CF3658009628CA /* WeekView.swift */; };
@@ -38,7 +38,7 @@
 		F0D2A1A22976E133004D2655 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A1A12976E133004D2655 /* TasksViewController.swift */; };
 		F0D2A1A42976E14D004D2655 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2A1A32976E14D004D2655 /* ContactsViewController.swift */; };
 		F0F42D0629D1C54500EF49B6 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F42D0529D1C54500EF49B6 /* Date+Extension.swift */; };
-		F0F42D8529D31B1800EF49B6 /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F42D8429D31B1800EF49B6 /* BaseInfoView.swift */; };
+		F0F42D8529D31B1800EF49B6 /* WABaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F42D8429D31B1800EF49B6 /* WABaseInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +63,7 @@
 		F08F056729CE3C66009628CA /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		F08F056929CE3C83009628CA /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		F08F056B29CE3C97009628CA /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
-		F08F056E29CE4EB0009628CA /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		F08F056E29CE4EB0009628CA /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 		F08F057029CE66E7009628CA /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		F08F057229CE6719009628CA /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		F08F057529CF3658009628CA /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		F0D2A1A12976E133004D2655 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		F0D2A1A32976E14D004D2655 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		F0F42D0529D1C54500EF49B6 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		F0F42D8429D31B1800EF49B6 /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
+		F0F42D8429D31B1800EF49B6 /* WABaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +214,7 @@
 		F08F056229CE3B72009628CA /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				F08F056E29CE4EB0009628CA /* WAButton.swift */,
 				F08F051829CDC881009628CA /* WorkoutTabBarController.swift */,
 				F08F053329CE26EB009628CA /* NavBarController.swift */,
 				F08F053629CE3533009628CA /* BaseController.swift */,
@@ -259,7 +260,6 @@
 			isa = PBXGroup;
 			children = (
 				F08F057429CF363E009628CA /* WeekView */,
-				F08F056E29CE4EB0009628CA /* SecondaryButton.swift */,
 				F08F057029CE66E7009628CA /* OverviewNavBar.swift */,
 			);
 			path = Views;
@@ -317,7 +317,7 @@
 		F0F42D8329D31AF800EF49B6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F0F42D8429D31B1800EF49B6 /* BaseInfoView.swift */,
+				F0F42D8429D31B1800EF49B6 /* WABaseInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -397,7 +397,7 @@
 				F0D2A0EE2972376F004D2655 /* MainTabBarController.swift in Sources */,
 				F0411FB0296F993600973399 /* MusterViewController.swift in Sources */,
 				F08F057829CF385E009628CA /* WeekDayView.swift in Sources */,
-				F08F056F29CE4EB0009628CA /* SecondaryButton.swift in Sources */,
+				F08F056F29CE4EB0009628CA /* WAButton.swift in Sources */,
 				F089EC5429840D5A00312FD6 /* Home.swift in Sources */,
 				F089EC5829841C8E00312FD6 /* TimerViewModel.swift in Sources */,
 				F0D2A1A02976E120004D2655 /* ScheduleViewController.swift in Sources */,
@@ -407,7 +407,7 @@
 				F08F051929CDC881009628CA /* WorkoutTabBarController.swift in Sources */,
 				F08F057329CE6719009628CA /* BaseView.swift in Sources */,
 				F08F053729CE3533009628CA /* BaseController.swift in Sources */,
-				F0F42D8529D31B1800EF49B6 /* BaseInfoView.swift in Sources */,
+				F0F42D8529D31B1800EF49B6 /* WABaseInfoView.swift in Sources */,
 				F0411EEC296F0ACB00973399 /* WeatherViewController.swift in Sources */,
 				F0411EE8296F0ACB00973399 /* AppDelegate.swift in Sources */,
 				F08F057629CF3658009628CA /* WeekView.swift in Sources */,

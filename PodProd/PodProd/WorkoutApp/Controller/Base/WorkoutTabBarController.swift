@@ -20,10 +20,15 @@ final class WorkoutTabBarController: UITabBarController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
         configure()
+        switchTo(tab: .session)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func switchTo(tab: Tabs) {
+        selectedIndex = tab.rawValue
     }
     
     private func configure() {
